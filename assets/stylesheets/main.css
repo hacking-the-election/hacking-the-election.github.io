@@ -6,3 +6,56 @@
 :root {
 	--main-color: black;
 }
+
+body {
+	font-family: "Source Code Pro";
+}
+
+@font-face {
+	src: url("../fonts/avenir/avenir-medium.otf");
+	font-family: "Avenir";
+}
+
+a, a:hover, a:focus, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+#navbar {
+	height: 70px;
+	width: calc(100% - 40px);
+	padding-left: 40px;
+	font-family: 'Source Code Pro';
+	font-weight: 200;
+}
+
+.navbar-item {
+	cursor: pointer;
+	padding-right: 60px;
+	height: 70px;
+	display: inline-block;
+	line-height: 70px;
+	transition: all .2s;
+}
+
+.navbar-item:hover {
+	transform: translate(0px, 1px);
+	color: rgb(0, 60, 189);
+}
+
+#lander {
+	text-align: center;
+	font-size: 40px;
+	padding-top: 50px;
+}
+
+h1 {
+	font-family: "Avenir"
+}
+
+h5 {
+	width: 70%;
+	margin: 20px auto;
+	font-size: 30px;
+	font-weight: lighter;
+}

@@ -1,0 +1,35 @@
+#launch-lander {
+    width: calc(100% - 50px);
+    height: 400px;
+    background-color: black;
+    color: white;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+#redistrict-launch {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+    margin-right: 20%;
+}
+
+button {
+    all: unset;
+    font-family: "Source Code Pro";
+    padding: 6px 20px;
+    border-radius: 0px;
+    cursor: pointer; 
+    transition: .4s;
+    display: inline-block;
+}
+
+.ghost:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.ghost {
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+}
