@@ -1,0 +1,46 @@
+.white {
+    color: transparent;
+}
+
+#cursor {
+    width: 45px;
+    height: 7px;
+    margin-left: 17px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+}
+
+.blinker {
+    animation: blinker 0.8s infinite;
+}
+
+@keyframes blinker {
+    0% { opacity: 0; }
+    49% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+#gerryLink, #redistrictingLink {
+    cursor: pointer;
+    transition: .2s;
+}
+
+#gerryLink {
+    color: rgb(0, 60, 255);
+}
+
+#gerryLink:hover {
+    color: rgb(50, 98, 255);
+    text-shadow: 0px 0px 8px rgba(49, 49, 247, 0.637);
+}
+
+#redistrictingLink {
+    color: rgb(255, 31, 31);
+}
+
+#redistrictingLink:hover {
+    color: rgb(255, 52, 52);
+    text-shadow: 0px 0px 8px rgba(247, 49, 49, 0.637);
+
+}

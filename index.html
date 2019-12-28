@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Home</title>
+		<title>Hacking the Election | A Computational Analysis of Gerrymandering</title>
 		<link rel='stylesheet' href='assets/stylesheets/main.css'>
+		<link rel='stylesheet' href='assets/stylesheets/index.css'>
 		<link rel='icon' href='favicon.ico' type='image/x-icon'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
@@ -13,11 +14,42 @@
 			<a href="research.html"><div class='navbar-item'>research</div></a>
 			<a href="results.html"><div class='navbar-item'>results</div></a>
 			<a href="interactive.html"><div class='navbar-item'>interactive</div></a>
+			<a href="interactive.html"><div class='navbar-item'>contribute</div></a>
 		</div>
 		<div id='lander'>
-			<h1 id='header'>hacking the election</h1>
-			<h5>a computational study of gerrymandering and redistricting</h5>
+			<h1 id='header'><span>hac</span><span class='white'>king the election</span></h1>
+			<h5>a computational study of <span id='gerryLink'>gerrymandering</span> and <span id='redistrictingLink'>redistricting</span></h5>
 		</div>
+
+		<script>
+			function sleep(ms) {
+				return new Promise(resolve => setTimeout(resolve, ms));
+			}
+
+			async function type() {
+				var h = document.getElementById("header");
+				var letters = "hacking the election";
+
+				h.innerHTML = "<div id='cursor'></div><span class='white'>hacking the election</span>";
+				await sleep(200)
+
+				for (var i = 0; i <= letters.length; i++) {
+					letter1 = letters.substr(0, i);
+					letter2 = letters.substr(i, letters.length - i);
+
+					h.innerHTML = letter1 + "<div id='cursor'></div><span class='white'>" + letter2 + "</span>";
+					
+					if ( letters[i] == " ") {
+						await sleep(300)
+					}
+					
+					await sleep(100);
+				}
+				document.getElementById("cursor").classList.add("blinker");
+			}
+
+			type();
+		</script>
 		<footer>
 		</footer>
 	</body>
