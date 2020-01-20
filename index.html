@@ -2,10 +2,13 @@
 <html>
 	<head>
 		<title>Hacking the Election | A Computational Analysis of Gerrymandering</title>
+
 		<link rel='stylesheet' href='assets/stylesheets/main.css'>
 		<link rel='stylesheet' href='assets/stylesheets/index.css'>
+
 		<link rel='icon' href='favicon.ico' type='image/x-icon'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
 		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 	</head>
 	<body>
@@ -16,9 +19,36 @@
 			<a href="interactive.html"><div class='navbar-item'>interactive</div></a>
 			<a href="interactive.html"><div class='navbar-item'>contribute</div></a>
 		</div>
+
 		<div id='lander'>
-			<h1 id='header'><span>hac</span><span class='white'>king the election</span></h1>
-			<h5>a computational study of <span id='gerryLink'>gerrymandering</span> and <span id='redistrictingLink'>redistricting</span></h5>
+			<h1 id='header'>hacking the election</h1>
+
+			<h5>
+				<span>a computational study of</span>
+				<div id='gerryLink'>
+					<span>gerrymandering</span>
+					<div class='under'></div>
+				</div>
+
+				<span>and</span>
+
+				<div id='redistrictingLink'>
+					<span>redistricting</span>
+					<div class='under'></div>
+				</div>
+			</h5>
+
+		</div>
+
+		<div id='buttons'>
+			<button>
+				<img src="assets/images/25231.svg" width=30px>
+				<span>Code</span>
+			</button>
+			<button>Interactive</button>
+		</div>
+
+		<div id='about'>
 		</div>
 
 		<script>
@@ -28,27 +58,29 @@
 
 			async function type() {
 				var h = document.getElementById("header");
+				var hidden = document.getElementById("hidden_title_text");
+				var shown = document.getElementById("white_title_text");
+
 				var letters = "hacking the election";
 
-				h.innerHTML = "<div id='cursor'></div><span class='white'>hacking the election</span>";
 				await sleep(200)
 
 				for (var i = 0; i <= letters.length; i++) {
 					letter1 = letters.substr(0, i);
 					letter2 = letters.substr(i, letters.length - i);
 
-					h.innerHTML = letter1 + "<div id='cursor'></div><span class='white'>" + letter2 + "</span>";
-					
+					shown.innerHTML = letter1;
+					hidden.innerHTML = letter2;
+
 					if ( letters[i] == " ") {
 						await sleep(300)
 					}
-					
+
 					await sleep(100);
 				}
-				document.getElementById("cursor").classList.add("blinker");
 			}
 
-			type();
+			// type();
 		</script>
 		<footer>
 		</footer>
