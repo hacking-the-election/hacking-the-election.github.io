@@ -1,5 +1,9 @@
+body {
+    text-align: center;
+}
+
 .white {
-    color: transparent;
+    color: rgba(128, 128, 128, 0);
 }
 
 #cursor {
@@ -14,6 +18,20 @@
     animation: blinker 0.8s infinite;
 }
 
+h1 {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+h5 {
+    font-family: "Avenir";
+}
+
+#text {
+    width: 100%;
+}
+
 @keyframes blinker {
     0% { opacity: 0; }
     49% { opacity: 0; }
@@ -21,26 +39,64 @@
     100% { opacity: 1; }
 }
 
-#gerryLink, #redistrictingLink {
+.icon {
+    width: 100px;
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 50px;
+}
+
+#buttons {
+    width: 100%;
+    height: 100px;
+    margin-top: 70px;
+}
+
+button {
+    all: unset;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2px;
     cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 18px;
+    margin: 8px;
     transition: .2s;
+    vertical-align: middle;
 }
 
-#gerryLink {
-    color: rgb(0, 60, 255);
+button img {
+    filter: invert(1);
+}
+ 
+span, img {
+    vertical-align: middle;
 }
 
-#gerryLink:hover {
-    color: rgb(50, 98, 255);
-    text-shadow: 0px 0px 8px rgba(49, 49, 247, 0.637);
+#redistrictingLink, #gerryLink {
+    display: inline-block;
+    text-align: right;
 }
 
-#redistrictingLink {
-    color: rgb(255, 31, 31);
+.under {
+    height: 7px;
+    background-color: white;
+    width: 94%;
+    position: relative;
+    right: -7px;
+    top: -7px;
+    z-index: -1;
 }
 
-#redistrictingLink:hover {
-    color: rgb(255, 52, 52);
-    text-shadow: 0px 0px 8px rgba(247, 49, 49, 0.637);
+#gerryLink .under {
+    background-color: #128dff;
+}
 
+#redistrictingLink .under {
+    background-color: #ff3030;
 }

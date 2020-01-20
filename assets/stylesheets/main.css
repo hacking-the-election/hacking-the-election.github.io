@@ -3,18 +3,14 @@
 	padding: 0;
 }
 
-:root {
-	--main-color: black;
-}
-
 body {
 	font-family: "Source Code Pro";
-	background: rgb(2, 2, 3);
+	background: rgb(3, 15, 9);
 	color: white;
 }
 
 @font-face {
-	src: url("../fonts/avenir/avenir-medium.otf");
+	src: url("../fonts/avenir/avenir-light.otf");
 	font-family: "Avenir";
 }
 
@@ -24,6 +20,7 @@ a, a:hover, a:focus, a:active {
 }
 
 #navbar {
+	text-align: left;
 	height: 70px;
 	width: calc(100% - 40px);
 	padding-left: 40px;
