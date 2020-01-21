@@ -54,26 +54,10 @@ h3 {
     margin-top: 70px;
 }
 
-button {
-    all: unset;
-    height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 2px;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    border: 2px solid rgb(255, 255, 255);
-    font-size: 18px;
-    margin: 8px;
-    transition: .2s;
-    vertical-align: middle;
-}
-
 button img {
     filter: invert(1);
 }
- 
+
 span, img {
     vertical-align: middle;
 }

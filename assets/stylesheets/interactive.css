@@ -16,20 +16,37 @@
 
 button {
     all: unset;
-    font-family: "Source Code Pro";
-    padding: 6px 20px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 0px;
-    cursor: pointer; 
-    transition: .4s;
-    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 18px;
+    margin: 8px;
+    transition: .2s;
+    vertical-align: middle;
+}
+
+
+.ghost {
+    background: linear-gradient(to bottom, white 0%, white 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 0px 4px;
+    color: white;
+    text-decoration: none;
+    transition: background-size .2s;
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .ghost:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-size: 4px 50px;
+    color: black;
 }
 
-.ghost {
-    background-color: transparent;
-    border: 2px solid rgb(255, 255, 255);
+h1 {
+    margin-bottom: 20px;
 }
