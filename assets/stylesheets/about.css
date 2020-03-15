@@ -1,0 +1,17 @@
+h3 {
+    font-size: 25px;
+    font-family: "Avenir";
+}
+
+.developer-bio {
+    width: 30%;
+    display: inline-block;
+}
+
+.about-icon {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
