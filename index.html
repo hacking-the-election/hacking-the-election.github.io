@@ -1,87 +1,90 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Hacking the Election | A Computational Analysis of Gerrymandering</title>
+    <head>
+        <title>Hacking the Election | A Computational Analysis of Gerrymandering</title>
 
-		<link rel='stylesheet' href='assets/stylesheets/main.css'>
-		<link rel='stylesheet' href='assets/stylesheets/index.css'>
+        <link rel='stylesheet' href='assets/stylesheets/main.css'>
+        <link rel='stylesheet' href='assets/stylesheets/index.css'>
 
-		<link rel='icon' href='favicon.ico' type='image/x-icon'>
-		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='icon' href='favicon.ico' type='image/x-icon'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<div id='navbar'>
-			<a href="index.html"><div class='navbar-item'>home</div></a>
-			<a href="research.html"><div class='navbar-item'>research</div></a>
-			<a href="interactive.html"><div class='navbar-item'>interactive</div></a>
-			<a href="contribute.html"><div class='navbar-item'>contribute</div></a>
-		</div>
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id='navbar'>
+            <a href="index.html"><div class='navbar-item'>home</div></a>
+            <a href="about.html"><div class='navbar-item'>about</div></a>
+            <a href="research.html"><div class='navbar-item'>research</div></a>
+            <a href="interactive.html"><div class='navbar-item'>interactive</div></a>
+            <a href="contribute.html"><div class='navbar-item'>contribute</div></a>
+        </div>
 
-		<div id='lander'>
-			<h1 id='header'>hacking the election</h1>
+        <div id='lander'>
+            <h1 id='header'>hacking the election</h1>
 
-			<h5>
-				<span>a computational study of</span>
-				<div id='gerryLink'>
-					<span>gerrymandering</span>
-					<div class='under'></div>
-				</div>
+            <h5>
+                <span>a computational study of</span>
+                <div id='gerryLink'>
+                    <span>gerrymandering</span>
+                    <div class='under'></div>
+                </div>
 
-				<span>and</span>
+                <span>and</span>
 
-				<div id='redistrictingLink'>
-					<span>redistricting</span>
-					<div class='under'></div>
-				</div>
-			</h5>
+                <div id='redistrictingLink'>
+                    <span>redistricting</span>
+                    <div class='under'></div>
+                </div>
+            </h5>
 
-		</div>
+        </div>
 
-		<div id='buttons'>
-			<a href="https://github.com/hacking-the-election/gerrymandering"><button>
-				<img src="assets/images/25231.svg" width=30px>
-				<span>Code</span>
-			</button></a>
-			<button>Interactive</button>
-		</div>
+        <div id='buttons'>
+            <a href="https://github.com/hacking-the-election/gerrymandering"><button>
+                <img src="assets/images/25231.svg" width=30px>
+                <span>Code</span>
+            </button></a>
+            <a href="https://github.com/hacking-the-election/gerrymandering">
+                <button>Research</button>
+            </a>
+        </div>
 
-		<div id='about'>
-		</div>
+        <div id='about'>
+        </div>
 
-		<script>
-			function sleep(ms) {
-				return new Promise(resolve => setTimeout(resolve, ms));
-			}
+        <script>
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
 
-			async function type() {
-				var h = document.getElementById("header");
-				var hidden = document.getElementById("hidden_title_text");
-				var shown = document.getElementById("white_title_text");
+            async function type() {
+                var h = document.getElementById("header");
+                var hidden = document.getElementById("hidden_title_text");
+                var shown = document.getElementById("white_title_text");
 
-				var letters = "hacking the election";
+                var letters = "hacking the election";
 
-				await sleep(200)
+                await sleep(200)
 
-				for (var i = 0; i <= letters.length; i++) {
-					letter1 = letters.substr(0, i);
-					letter2 = letters.substr(i, letters.length - i);
+                for (var i = 0; i <= letters.length; i++) {
+                    letter1 = letters.substr(0, i);
+                    letter2 = letters.substr(i, letters.length - i);
 
-					shown.innerHTML = letter1;
-					hidden.innerHTML = letter2;
+                    shown.innerHTML = letter1;
+                    hidden.innerHTML = letter2;
 
-					if ( letters[i] == " ") {
-						await sleep(300)
-					}
+                    if ( letters[i] == " ") {
+                        await sleep(300)
+                    }
 
-					await sleep(100);
-				}
-			}
+                    await sleep(100);
+                }
+            }
 
-			// type();
-		</script>
-		<footer>
-		</footer>
-	</body>
+            type();
+        </script>
+        <footer>
+        </footer>
+    </body>
 </html>
