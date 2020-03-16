@@ -24,6 +24,7 @@ h4 {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 30px;
+    font-family: "Avenir";
 }
 
 .profile-picture {
@@ -35,4 +36,12 @@ h4 {
 #bio-section {
     margin-left: auto;
     margin-right: auto;
+}
+
+.about-icon {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
 }

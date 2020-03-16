@@ -75,6 +75,7 @@ span, img {
     right: -7px;
     top: -7px;
     z-index: -1;
+    transition: .2s;
 }
 
 #gerryLink .under {
@@ -83,4 +84,14 @@ span, img {
 
 #redistrictingLink .under {
     background-color: #ff3030;
+}
+
+#gerryLink:hover .under {
+    transform: translate(1px,1px);
+    /* background-color: blue; */
+}
+
+#redistrictingLink:hover .under {
+    transform: translate(1px,1px);
+    /* background-color: blue; */
 }

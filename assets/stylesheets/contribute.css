@@ -1,0 +1,36 @@
+input {
+    all: unset;
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+    display: block;
+    border-radius: 2px;
+    /* box-shadow: 6px 6px 0px red; */
+}
+
+#text-input-cont {
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+textarea {
+    all: unset;
+    height: 90px;
+    width: 250px;
+    font-size: 14px;
+    text-align: left;
+    padding: 5px;
+    background-color: white;
+    border-radius: 2px;
+    color: black;
+    /* box-shadow: 6px 6px 0px red; */
+    display: inline-block;
+    vertical-align: top;
+
+}
