@@ -3,34 +3,39 @@
 }
 
 #project-summary {
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
 }
 
 .developer-bio {
-    margin-top: 200px;
+    margin-top: 100px;
     margin-left: 100px;
     width: 1000px;
-    height: 400px;
-    border-width: 10px;
-    border-color: white;
-    border-style: solid;
+    height: 350px;
     text-align: left;
+    box-shadow: 20px 20px 40px #002ca3;
+    z-index: 100000;
+    padding-top: 20px;
+    transform: translateY(-50px);
+}
+
+h1 {
+    font-family: "Source Code Pro";
+    margin-top: 30px;
+    font-size: 75px;
 }
 
 h4 {
     margin-left: 25px;
-    margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 40px;
     font-family: "Avenir";
 }
 
 .profile-picture {
     width: 350px;
     height: auto;
-    margin-left: 25px;
 }
 
 #bio-section {
@@ -44,4 +49,18 @@ h4 {
     background-color: white;
     padding: 0px;
     margin: 0px;
+}
+
+.profile-picture-container {
+    margin-left: 25px;
+    float: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.developer-bio-paragraph {
+    width: 50%;
+    margin-left: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
