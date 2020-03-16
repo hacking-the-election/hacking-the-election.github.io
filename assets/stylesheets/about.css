@@ -1,0 +1,38 @@
+.content-section {
+    text-align: left;
+}
+
+#project-summary {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.developer-bio {
+    margin-top: 200px;
+    margin-left: 100px;
+    width: 1000px;
+    height: 400px;
+    border-width: 10px;
+    border-color: white;
+    border-style: solid;
+    text-align: left;
+}
+
+h4 {
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.profile-picture {
+    width: 350px;
+    height: auto;
+    margin-left: 25px;
+}
+
+#bio-section {
+    margin-left: auto;
+    margin-right: auto;
+}
