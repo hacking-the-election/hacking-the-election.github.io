@@ -76,3 +76,8 @@ button {
     transition: .2s;
     vertical-align: middle;
 }
+
+a.buzzword {
+	font-style: bold;
+	color: #6691ff;
+}
