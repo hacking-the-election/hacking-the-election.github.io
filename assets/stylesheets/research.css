@@ -9,10 +9,19 @@ p {
     width: 75%;
 }
 
+.container {
+    display: flex;
+}
+
 .image-container {
     margin-top: 20px;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.text-container > * {
+    display: block;
+    text-align: center;
 }
 
 /*
@@ -35,5 +44,4 @@ img {
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 20%;
-    transform: translateY(200px);
 }
