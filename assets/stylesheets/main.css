@@ -77,7 +77,10 @@ button {
     vertical-align: middle;
 }
 
-a.buzzword {
-	font-style: bold;
-	color: #6691ff;
+p > a, p > a:link, p > a:hover {
+    color: #3474eb;
+}
+
+p > a:visited {
+    color: #8856c4;
 }

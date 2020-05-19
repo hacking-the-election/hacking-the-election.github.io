@@ -1,16 +1,10 @@
 p {
     margin-left: 10%;
     width: 75%;
+    font-size: 20px;
+    text-align: center;
 }
 
 #info-section {
     margin-top: 25px;
-}
-
-p > a, p > a:link, p > a:hover {
-    color: #3474eb;
-}
-
-p > a:visited {
-    color: #b603fc
 }
