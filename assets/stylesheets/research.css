@@ -1,47 +1,16 @@
-#base-communities {
-    margin-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-}
-
 p {
     margin-left: 10%;
     width: 75%;
 }
 
-.container {
-    display: flex;
+#info-section {
+    margin-top: 25px;
 }
 
-.image-container {
-    margin-top: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+p > a, p > a:link, p > a:hover {
+    color: #3474eb;
 }
 
-.text-container > * {
-    display: block;
-    text-align: center;
-}
-
-/*
-not sure why the below selector doesn't work with
-.image-container > img
-and
-.image-container > .caption
-*/
-img {
-    float: left;
-    width: 400px;
-    height: auto;
-}
-
-.caption {
-    float: right;
-    width: 30%;
-    font-style: italic;
-    position: relative;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 20%;
+p > a:visited {
+    color: #b603fc
 }
