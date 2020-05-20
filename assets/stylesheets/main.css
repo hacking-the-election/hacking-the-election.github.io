@@ -1,63 +1,63 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	font-family: "Source Code Pro";
-	background: rgb(3, 15, 9);
-	color: white;
+    font-family: "Source Code Pro";
+    background: rgb(3, 15, 9);
+    color: white;
 }
 
 @font-face {
-	src: url("../fonts/avenir/avenir-light.otf");
-	font-family: "Avenir";
+    src: url("../fonts/avenir/avenir-light.otf");
+    font-family: "Avenir";
 }
 
 a, a:hover, a:focus, a:active {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 #navbar {
-	text-align: left;
-	height: 70px;
-	width: calc(100% - 40px);
-	padding-left: 40px;
-	font-family: 'Source Code Pro';
-	font-weight: 200;
+    text-align: left;
+    height: 70px;
+    width: calc(100% - 40px);
+    padding-left: 40px;
+    font-family: 'Source Code Pro';
+    font-weight: 200;
 }
 
 .navbar-item {
-	cursor: pointer;
-	padding-right: 60px;
-	height: 70px;
-	display: inline-block;
-	line-height: 70px;
-	transition: transform .2s;
+    cursor: pointer;
+    padding-right: 60px;
+    height: 70px;
+    display: inline-block;
+    line-height: 70px;
+    transition: transform .2s;
 }
 
 .navbar-item:hover {
-	transform: translate(0px, 1px);
+    transform: translate(0px, 1px);
 }
 
 #lander {
-	text-align: center;
-	font-size: 40px;
-	padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
 }
 
 h1 {
-	font-weight: 200;
-	/* font-family: "Avenir" */
-	font-stretch: extra-condensed;
+    font-weight: 200;
+    /* font-family: "Avenir" */
+    font-stretch: extra-condensed;
 }
 
 h5 {
-	width: 70%;
-	margin: 20px auto;
-	font-size: 30px;
-	font-weight: lighter;
+    width: 70%;
+    margin: 20px auto;
+    font-size: 30px;
+    font-weight: lighter;
 }
 
 
@@ -77,10 +77,18 @@ button {
     vertical-align: middle;
 }
 
-p > a, p > a:link, p > a:hover {
-    color: #3474eb;
+p > a, p > a:link {
+    color: #2db2ff;
+    transition: 0.1s;
 }
 
-p > a:visited {
-    color: #8856c4;
+p > a:hover {
+    color: #d0e0ff;
+    text-shadow: 0px 0px 2px rgb(64, 169, 255),
+                 0px 0px 8px rgba(49, 138, 255, 0.829),
+                 0px 0px 25px rgb(34, 111, 255);
 }
+
+/* p > a:visited {
+    color: #8856c4;
+} */

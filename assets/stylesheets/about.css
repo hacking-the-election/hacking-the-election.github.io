@@ -54,6 +54,18 @@ h4 {
     background-size: 350px;
 }
 
+#arin button {
+    background-color: rgba(42, 144, 229, 0.68);
+}
+
+#kai button {
+    background-color: rgba(145, 42, 229, 0.68);
+}
+
+#james button {
+    background-color: rgba(229, 42, 42, 0.68);
+}
+
 button img {
     filter: invert(0);
 }
@@ -72,7 +84,28 @@ button {
 .about-icon {
     width: 100px;
     height: 100px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     padding: 0px;
     margin: 0px;
+}
+
+
+#text-cont {
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    width: 70%;
+}
+
+#project-summary {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.233);
+}
+
+.email {
+    margin-top: -4px;
 }
