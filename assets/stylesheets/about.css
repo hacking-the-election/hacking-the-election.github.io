@@ -20,40 +20,38 @@ h4 {
     margin-top: 100px;
 }
 
-#content-section > p {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 30px;
-    font-size: 20px;
+.developer-bio h4 {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 50px;
 }
-
 .developer-bio {
-    margin-left: 4%;
-    margin-bottom: 15px;
+    margin: 20px;
     width: 300px;
     height: 300px;
-    text-align: left;
-    z-index: 2;
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
     text-align: center;
-}
-
-.profile-picture {
-    width: 100%;
-    height: 100%;
     border-radius: 50%;
 }
 
 #kai {
-    background-image: url("assets/images/andrew-yang.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0) 30%, #be31ff86 100%), url(../images/andrew-yang.jpg);
+    background-blend-mode: screen;
+    background-size: 350px;
 }
 
-.content {
-    position: absolute;
-    width: calc(var(--bio-width) - 100px);
-    padding-top: 35px;
+#james {
+    background-image: linear-gradient(rgba(0,0,0,0) 30%, #ff313193 100%), url(../images/andrew-yang.jpg);
+    background-blend-mode: screen;
+    background-size: 350px;
+}
+
+#arin {
+    background-image: linear-gradient(rgba(0,0,0,0) 30%, #3164ff70 100%), url(../images/andrew-yang.jpg);
+    background-blend-mode: screen;
+    background-size: 350px;
 }
 
 button img {
