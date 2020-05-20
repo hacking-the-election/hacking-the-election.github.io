@@ -19,7 +19,7 @@
         </div>
 
         <div id='lander'>
-            <h1 id='header'>hacking the election</h1>
+            <h1 id='header'></h1>
 
             <h5>
                 <span>a computational study of</span>
@@ -43,11 +43,11 @@
         </div>
 
         <div id='buttons'>
-            <a href="https://github.com/hacking-the-election/gerrymandering"><button>
-                <img src="assets/images/25231.svg" width=30px>
-                <span>Code</span>
-            </button></a>
-            <a href="https://github.com/hacking-the-election/data"><button>Data</button>
+            <a href="https://github.com/hacking-the-election/gerrymandering">
+                <button>
+                    <img src="assets/images/25231.svg" width=30px>
+                    <span>Code</span>
+                </button>
             </a>
             <a href="https://github.com/hacking-the-election/gerrymandering">
                 <button>Research</button>
@@ -63,27 +63,32 @@
             }
 
             async function type() {
-                var h = document.getElementById("header");
-                var hidden = document.getElementById("hidden_title_text");
-                var shown = document.getElementById("white_title_text");
+                var text = "hacking the election";
+                var header = document.getElementById('header');
 
-                var letters = "hacking the election";
-
-                await sleep(200)
-
-                for (var i = 0; i <= letters.length; i++) {
-                    letter1 = letters.substr(0, i);
-                    letter2 = letters.substr(i, letters.length - i);
-
-                    shown.innerHTML = letter1;
-                    hidden.innerHTML = letter2;
-
-                    if ( letters[i] == " ") {
-                        await sleep(300)
-                    }
-
-                    await sleep(100);
+                for (var i = 0; i < text.length; i++) {
+                    var str = "<span class='off' id='text" + i + "'>"
+                    str += text.substr(i, 1);
+                    str += "</span>"
+                    header.innerHTML += str;
                 }
+
+                var cursor = document.createElement("div");
+                cursor.id = "cursor";
+
+                for (var i = 0; i <= text.length; i++) {
+                    header.children[i].classList.remove("off");
+                    header.children[i].classList.add("on");
+                    header.insertBefore(cursor, document.getElementById("text" + i));
+                    await sleep(Math.floor(Math.random() * 150) + 60);
+
+                    if (text.substr(i, 1) == " ") {
+                        await sleep(200);
+                    }
+                }
+
+                await sleep(200);
+                cursor.classList.add("blinker");
             }
 
             type();
