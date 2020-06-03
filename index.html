@@ -51,7 +51,7 @@
                 </button>
             </a>
             <a href="https://github.com/hacking-the-election/gerrymandering">
-                <button>Research</button>
+                <button class='ghost'>Research</button>
             </a>
         </div>
 
@@ -74,8 +74,10 @@
                     header.innerHTML += str;
                 }
 
-                var cursor = document.createElement("div");
+                var cursor = document.createElement("span");
                 cursor.id = "cursor";
+                cursor.classList.add("on");
+                cursor.innerHTML = "_";
 
                 for (var i = 0; i <= text.length; i++) {
                     header.children[i].classList.remove("off");

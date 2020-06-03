@@ -5,7 +5,7 @@
 
 body {
     font-family: "Source Code Pro";
-    background: rgb(3, 15, 9);
+    background: rgb(13, 34, 44);
     color: white;
 }
 
@@ -75,6 +75,16 @@ button {
     margin: 8px;
     transition: .2s;
     vertical-align: middle;
+}
+
+.ghost {
+    background-color: transparent;
+    color: white;
+}
+
+.ghost:hover {
+    background-color: white;
+    color: black;
 }
 
 p > a, p > a:link {

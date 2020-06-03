@@ -7,21 +7,16 @@ body {
 }
 
 span.off {
-    color: rgba(0,0,0,0);
+    color: transparent;
 }
 
 span.on {
     color: white;
+    text-shadow: 4px 4px 20px rgba(0,0,0,0.3), 4px 4px 0px black;
 }
 
-#cursor {
-    width: 45px;
-    height: 7px;
-    margin-left: 17px;
-    margin-bottom: -7px;
-    background-color: rgb(255, 255, 255);
-    display: inline-block;
-}
+/* #cursor {
+ b} */
 
 .blinker {
     animation: blinker 0.8s infinite;

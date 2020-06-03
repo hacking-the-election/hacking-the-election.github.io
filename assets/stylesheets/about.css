@@ -37,7 +37,7 @@ h4 {
 }
 
 #kai {
-    background-image: linear-gradient(rgba(0,0,0,0) 30%, #be31ff86 100%), url(../images/andrew-yang.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0) 30%, #ff0efa91 100%), url(../images/andrew-yang.jpg);
     background-blend-mode: screen;
     background-size: 350px;
 }
@@ -59,7 +59,7 @@ h4 {
 }
 
 #kai button {
-    background-color: rgba(145, 42, 229, 0.68);
+    background-color: rgba(223, 42, 229, 0.68);
 }
 
 #james button {

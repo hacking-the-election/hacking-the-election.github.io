@@ -30,6 +30,7 @@
         <div id='results-cont'>
             <p id='state-text'></p>
             <div id='state-map'>
+                <object id='map-data' data="assets/images/states/idaho/precinct.svg"></object>
             </div>
         </div>
         <script>
@@ -42,6 +43,7 @@
                 name = name.replace(/_/g, " ");
                 name = capitalizeWords(name);
 
+                document.getElementById("map-data").setAttribute("data", "assets/images/states/" + evt.currentTarget.id + "/precinct.svg");
                 if (evt.currentTarget.classList.contains("nodata")) {
                     document.getElementById("state-text").innerHTML = "No raw source data available for " + name;
                 }
