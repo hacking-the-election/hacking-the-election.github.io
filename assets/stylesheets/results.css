@@ -1,20 +1,45 @@
+#info-section {
+    margin-top: 100px;
+}
+
 body {
     text-align: center;
 }
 
-#states-svg {
-    transform: scale(1,-1);
+#states {
+    margin-top: 30px;
+    transform: scale(1,-1.13);
 }
 
 path {
     fill:rgba(255, 255, 255, 0.103);
     stroke: white;
-    stroke-width: 2;
+    stroke-width: 1;
     transition: 0.2s;
 }
 
 path:hover {
     cursor: pointer;
-    stroke-width:1;
-    fill: rgba(255, 255, 255, 0.26);
+    stroke-width: 1;
+    opacity: 0.8;
+}
+
+.results {
+    fill: rgb(0, 180, 255);
+}
+
+.nodata {
+    fill: rgb(248, 59, 68);
+}
+
+.noresults {
+    fill: orange;
+}
+
+.at-large {
+    fill: rgb(27, 199, 27);
+}
+
+#states-svg {
+    max-width: 1000px;
 }
