@@ -41,8 +41,19 @@
                 var name = evt.currentTarget.id;
                 name = name.replace(/_/g, " ");
                 name = capitalizeWords(name);
-                
-                document.getElementById("state-text").innerHTML = "Data for " + name;
+
+                if (evt.currentTarget.classList.contains("nodata")) {
+                    document.getElementById("state-text").innerHTML = "No raw source data available for " + name;
+                }
+                else if (evt.currentTarget.classList.contains("noresults")) {
+                    document.getElementById("state-text").innerHTML = "No community algorithm results for " + name;
+                }
+                else if (evt.currentTarget.classList.contains("at-large")) {
+                    document.getElementById("state-text").innerHTML = name + " is an at-large district, no data to display.";
+                }
+                else {
+                    document.getElementById("state-text").innerHTML = "Results and data for " + name + ":";
+                }
             }
 
             for (var i = 0; i < document.getElementsByTagName("path").length; i++) {

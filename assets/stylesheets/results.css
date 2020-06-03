@@ -43,3 +43,7 @@ path:hover {
 #states-svg {
     max-width: 1000px;
 }
+
+#results-cont {
+    margin-top: 80px;
+}
