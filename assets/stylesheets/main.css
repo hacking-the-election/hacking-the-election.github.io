@@ -82,6 +82,10 @@ button {
     color: white;
 }
 
+button:hover {
+    transform: translate(0px, 3px);
+}
+
 .ghost:hover {
     background-color: white;
     color: black;

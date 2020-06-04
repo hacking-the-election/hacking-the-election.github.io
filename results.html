@@ -30,38 +30,18 @@
         <div id='results-cont'>
             <p id='state-text'></p>
             <div id='state-map'>
-                <object id='map-data' data="assets/images/states/idaho/precinct.svg"></object>
+                <div class='bar-section' id='map-type'>
+                    <div class='items'>
+                        <div onclick="moveBar(1)" class='active'>Precincts</div><div onclick="moveBar(2)">
+                        Communities</div><div onclick="moveBar(3)"> 
+                        Districts</div><div onclick="moveBar(4)">
+                        Re-Districts</div>
+                    </div>
+                    <div id='active-slider'></div>
+                </div>
+                <object id='map-data' data=""></object>
             </div>
         </div>
-        <script>
-            function capitalizeWords(str) {
-                return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-            }
-
-            function myf(evt) {
-                var name = evt.currentTarget.id;
-                name = name.replace(/_/g, " ");
-                name = capitalizeWords(name);
-
-                document.getElementById("map-data").setAttribute("data", "assets/images/states/" + evt.currentTarget.id + "/precinct.svg");
-                if (evt.currentTarget.classList.contains("nodata")) {
-                    document.getElementById("state-text").innerHTML = "No raw source data available for " + name;
-                }
-                else if (evt.currentTarget.classList.contains("noresults")) {
-                    document.getElementById("state-text").innerHTML = "No community algorithm results for " + name;
-                }
-                else if (evt.currentTarget.classList.contains("at-large")) {
-                    document.getElementById("state-text").innerHTML = name + " is an at-large district, no data to display.";
-                }
-                else {
-                    document.getElementById("state-text").innerHTML = "Results and data for " + name + ":";
-                }
-            }
-
-            for (var i = 0; i < document.getElementsByTagName("path").length; i++) {
-                document.getElementsByTagName("path")[i].addEventListener("click", myf, false);
-            }
-
-        </script>
+        <script src="assets/js/results.js"></script>
     </body>
 </html>
